@@ -1,16 +1,16 @@
 # !/bin/sh
 
 ### ZSH
-cp zsh/.zshrc $HOME/.zshrc
-cp zsh/.zshenv $HOME/.zshenv
+ln -Fis $PWD/zsh/.zshrc $HOME
+ln -Fis $PWD/zsh/.zshenv $HOME
 
 ### Neovim
-rm -rf $HOME/.config/nvim
-cp -rf nvim $HOME/.config/nvim
+# rm -rf $HOME/.config/nvim
+# cp -rf dotconfig/nvim $HOME/.config/nvim
 
 ### Kitty Terminal
-rm -rf $HOME/.config/kitty
-cp -rf kitty $HOME/.config/kitty
+# rm -rf $HOME/.config/kitty
+# cp -rf dotconfig/kitty $HOME/.config/kitty
 
 ### Tmux
-cp tmux/.tmux.conf $HOME/.tmux.conf
+# cp tmux/.tmux.conf $HOME/.tmux.conf
