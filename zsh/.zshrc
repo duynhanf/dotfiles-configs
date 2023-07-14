@@ -1,17 +1,15 @@
-# #--------------------------------------------------------------------------------
-# # zsh settings
-# #--------------------------------------------------------------------------------
-
-# #----------------------------------------
-# # alias
-# #----------------------------------------
-
 # source ..
 alias reloadzsh="source ~/.zshrc"
 
 alias ll="ls -AlhF"
 
-# Git
+# pnpm alias
+alias p="pnpm"
+alias pinstall="pnpm install"
+alias pdev="pnpm run dev"
+alias pbuild="npm run build"
+
+# Git alias
 alias gcl="git clone"
 alias gco="git checkout"
 alias gcob="git checkout -b"
@@ -29,14 +27,9 @@ alias gA="git add -A"
 alias gc="git commit"
 alias gcm="git commit -m"
 
-# alias code="nvim"
-
 # devops tools
 alias k=kubectl
 alias tf=terraform
-
-# # open nvim to edit zshrc
-# alias ezshrc="nvim ~/.zsh/zshrc.local"
 
 case $(uname) in
     *BSD|Darwin)
@@ -47,7 +40,7 @@ case $(uname) in
 	;;
 esac
 
-# # #branch名を表示する
+# branch名を表示する
 autoload -Uz add-zsh-hook
 autoload -Uz colors
 colors
@@ -76,3 +69,9 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="simple"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/zyan/Documents/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/zyan/Documents/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/zyan/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/zyan/Documents/google-cloud-sdk/completion.zsh.inc'; fi
