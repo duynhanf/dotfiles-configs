@@ -5,8 +5,8 @@ ln -Fis $PWD/zsh/.zshrc $HOME
 ln -Fis $PWD/zsh/.zshenv $HOME
 
 ### Neovim
-# rm -rf $HOME/.config/nvim
-# cp -rf dotconfig/nvim $HOME/.config/nvim
+rm -rf $HOME/.config/nvim
+ln -Fis $PWD/.config/nvim $HOME/.config/nvim
 
 ### Kitty Terminal
 # rm -rf $HOME/.config/kitty

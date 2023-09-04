@@ -75,3 +75,6 @@ if [ -f '/Users/zyan/Documents/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/zyan/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/zyan/Documents/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="/Users/zyan/.local/share/solana/install/active_release/bin:$PATH"
+
